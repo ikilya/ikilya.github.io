@@ -1,0 +1,294 @@
+/* font-family: "Geometria"; */
+@font-face {
+	font-family: "Geometria";
+	src: url("../fonts/Geometria/Geometria.eot");
+	src: url('../fonts/Geometria/Geometria.woff') format('woff'),
+		url('../fonts/Geometria/Geometria.ttf')  format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Geometria";
+	src: url("../fonts/Geometria/Geometria-Bold.eot");
+	src: url('../fonts/Geometria/Geometria-Bold.woff') format('woff'),
+	url('../fonts/Geometria/Geometria-Bold.ttf')  format('truetype');
+	font-style: normal;
+	font-weight: bold;
+}
+
+/* font-family: "Roboto"; */
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto/Roboto-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto/Roboto-Black.ttf");
+	font-style: normal;
+	font-weight: 900;
+}
+
+body {
+	font-family: "Geometria", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	background-color: #fff;
+	color: #000;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+.Bold {
+	font-weight: bold;
+}
+
+.Header {
+	position: fixed;
+	top: 17px;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	z-index: 999;
+}
+
+.LogoWrapper {
+	width: 21px;
+	height: 31px;
+	background-color: #1d1c1a;
+	margin-left: 31px;
+}
+
+.CartPriceWrapper {
+	display: flex;
+	align-items: center;
+	margin-right: 30px;
+}
+
+.ToggleMenu {
+	width: 16px;
+	height: 15px;
+	margin-left: 19px;
+	background: url("../img/color.svg");
+}
+
+.SidebarWrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	z-index: 999;
+}
+
+.SidebarMenu {
+	font-size: 14px;
+	line-height: normal;
+	letter-spacing: 0.6px;
+	text-align: left;
+	text-transform: uppercase;
+	color: #000000;
+	transform: translateX(-100%) rotate(-90deg) translateY(30px) translateX(50%) translateX(-23px);
+	transform-origin: right top 0;
+}
+
+.SidebarMenu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.SidebarMenu a, .SidebarMenu a:hover {
+	color: #000000;
+}
+
+.SidebarMenu li {
+	display: inline-block;
+	list-style: none;
+	margin: 0 30px;
+	padding-bottom: 3px;
+	border-bottom: 2px solid transparent;
+}
+
+.SidebarMenu li:hover {
+	border-color: #000000;
+	transition: border-color 0.3s;
+}
+
+.SidebarInstagram {
+	position: absolute;
+	left: 26px;
+	bottom: 22px;
+	width: 25px;
+	height: 25px;
+	opacity: 0.5;
+	background: url("../img/middle-gray.svg");
+}
+
+.CatalogWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	max-width: 1140px;
+	margin: 48px auto;
+}
+
+.CatalogItem {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 472px;
+	height: 573px;
+}
+
+.CatalogItem:nth-child(even) {
+	margin-left: 97px;
+}
+
+.CatalogItemInfo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+	height: 100%;
+}
+
+.CatalogItemVendorCode {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.3;
+	font-family: Geometria;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.44;
+	letter-spacing: 0.9px;
+	text-align: right;
+	color: #000000;
+	transform: translateX(-100%) rotate(-90deg);
+	transform-origin: right top 0;
+}
+
+.CatalogItemName {
+	position: absolute;
+	left: 0;
+	bottom: 119px;
+	font-family: Geometria;
+	font-size: 36px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.17;
+	letter-spacing: 2.1px;
+	text-align: left;
+	color: #000000;
+	width: 240px;
+	padding-bottom: 12px;
+	border-bottom: 4px solid transparent;
+	z-index: 10;
+}
+
+.CatalogItemPrice, .CatalogItemOnSalePrice {
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 0.8px;
+	color: #000000;
+	margin-bottom: 50px;
+}
+
+.CatalogItemImage {
+	width: 382px;
+	height: 100%;
+	background-color: #cccccc;
+}
+
+/* .CatalogItem:hover */
+.CatalogItem:hover .CatalogItemName{
+	border-color: #eecb00;
+}
+
+.CatalogItem:hover .CatalogItemVendorCode {
+	opacity: 1;
+}
+
+/* On sale */
+.OnSale .CatalogItemPrice {
+	color: #525252;
+	text-decoration-line: line-through;
+	text-decoration-color: #ff0000;
+	margin-bottom: 0;
+}
+
+.CatalogItemOnSalePrice {
+	margin-bottom: 26px;
+}
+
+.CatalogItemOnSaleLabel {
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateX(10px) translateY(-5px) rotate(-90deg);
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 0.8px;
+	color: #ff0000;
+}
+
+/* Sold out */
+.SoldOut .CatalogItemImage {
+	opacity: 0.5;
+}
+
+.SoldOut .CatalogItemName, .SoldOut .CatalogItemPrice {
+	color: #bcbcbc;
+}
+
+.SoldOut:hover .CatalogItemName{
+	border-color: transparent;
+}
+
+.SoldOut:hover .CatalogItemVendorCode {
+	opacity: 0.3;
+}
+
+.CatalogItemSoldOutLabel {
+	position: absolute;
+	top: 211px;
+	left: -32px;
+	font-family: Roboto;
+	font-size: 64px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 2.7px;
+	color: #eecb00;
+	text-transform: uppercase;
+}

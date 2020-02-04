@@ -1,0 +1,109 @@
+header .wrapper {
+    width: 1763px;
+    margin: 0 auto;
+    padding: 0 0 0 7px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(23, 42, 63, 0.95);
+    padding: 19px 0 17px;
+    color: #fff;
+    z-index: 10;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+header .logo {
+    width: 91px;
+    height: 41px;
+    background: url("../img/logo.png") no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header nav {
+    display: inline-block;
+    font-family: "GeometriaMedium", sans-serif;
+    font-size: 14px;
+    margin-left: 74px;
+    vertical-align: middle;
+}
+
+header nav ul li {
+    margin-right: 60px;
+    text-transform: uppercase;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header .social {
+    display: inline-block;
+    float: right;
+    margin-right: 147px;
+    margin-top: 8px;
+}
+
+header .social li{
+    margin-right: 9px;
+}
+
+header .social li a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+header .vk {
+    background: url("../img/vk.png");
+}
+
+header .fb {
+    background: url("../img/fb.png");
+}
+
+header .instagram {
+    background: url("../img/instagram.png");
+}
+
+header .callback {
+    display: inline-block;
+    float: right;
+}
+
+header .phone {
+    font-family: "GeometriaBold", sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    padding: 0;
+}
+
+header .callback .fa {
+    float: left;
+    font-size: 22px;
+    margin-right: 7px;
+}
+
+header .callback .button {
+    margin-left: 30px;
+    border-color: #fff;
+}

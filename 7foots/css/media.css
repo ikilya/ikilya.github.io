@@ -1,0 +1,1208 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1740px) {
+    .main_page nav {
+        position: absolute;
+        top: 54px;
+        left: 244px;
+    }
+
+    .main_page h1 {
+        font-size: 85px;
+        margin-top: 127px;
+    }
+}
+
+@media only screen and (max-width : 1444px) {
+    .main_page #about_company {
+        background-position-y: -50px;
+    }
+
+    .main_page #about_company .table_row {
+        position: relative;
+    }
+
+    .main_page .right {
+        width: 0;
+        padding: 0;
+    }
+
+    .main_page .right div {
+        display: none;
+    }
+
+    .main_page .right hr {
+        display: none;
+    }
+
+    .main_page .left {
+        padding: 0 0 100px;
+        text-align: center;
+    }
+
+    .main_page header {
+        padding: 16px 100px;
+        text-align: left;
+        background-color: rgba(15, 33, 53, 0.6);
+    }
+
+    .main_page nav {
+        top: 0;
+        right: 0;
+        left: auto;
+        width: 220px;
+        height: 100%;
+        z-index: 100;
+        pointer-events: none;
+    }
+
+    .main_page .toggle_menu {
+        position: relative;
+        margin: 36px 100px 0 auto;
+        width: 20px;
+        height: 3px;
+        background-color: #fff;
+        cursor: pointer;
+        z-index: 101;
+        transition: all 0.2s;
+        pointer-events: auto;
+    }
+
+    .main_page .toggle_menu:before, .toggle_menu:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+
+    .main_page .toggle_menu:before {
+        top: -7px;
+        height: 17px;
+        border-top: 3px solid #fff;
+        background-color: transparent;
+    }
+
+    .main_page .toggle_menu.active, .toggle_menu.active:after {
+        background-color: #000;
+    }
+
+    .main_page .toggle_menu.active:before {
+        border-color: #000;
+    }
+
+    .main_page .toggle_menu:hover, .main_page .toggle_menu:hover:after {
+        background-color: #4ca3b6;
+    }
+
+    .main_page .toggle_menu:hover:before {
+        border-color: #4ca3b6;
+    }
+
+    .main_page nav ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: #fff;
+        padding: 73px 0 50px;
+        transform: translateX(100%);
+        transition: all 0.5s;
+        pointer-events: auto;
+    }
+
+    .main_page nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .main_page nav ul li a {
+        display: block;
+        color: #000;
+        padding: 20px 10px;
+    }
+
+    .main_page nav ul li a:hover {
+        color: #4ca3b6;
+        border-bottom-color: transparent;
+    }
+
+    .main_page h1 {
+        margin-top: 60px;
+    }
+
+    .main_page .left {
+        padding-bottom: 120px;
+    }
+
+    .main_page .left p {
+        margin: 30px auto;
+    }
+
+    .main_page .book {
+        margin-top: 18px;
+    }
+
+    .main_page .right .social {
+        display: block;
+        position: absolute;
+        top: 655px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+    }
+
+    .main_page .right .social img {
+        display: none;
+    }
+
+    .main_page .right .social_icons {
+        display: block;
+        float: none;
+    }
+
+    .main_page .right .social_icons a {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    .main_page #fleet {
+        background-position: top 6px left;
+        margin-top: -38px;
+        height: 330px;
+    }
+
+    .main_page #fleet>div>div>div {
+        top: 35px;
+    }
+
+    .main_page #fleet hr {
+        top: 168px;
+    }
+
+    .main_page #fleet>div>div h3 {
+        top: 182px;
+    }
+
+    .main_page #fleet>div>div p {
+        top: 230px;
+    }
+
+    .main_page #fleet>div>div a {
+        width: 200px;
+    }
+
+    .main_page footer #piers {
+        background-size: auto 130%;
+        background-position: left -308px top;
+    }
+
+    .tours_page header nav ul {
+        margin-left: 0;
+    }
+
+    .tours_page header .toggle_menu {
+        background-color: #172a3f;
+    }
+
+    .tours_page header .toggle_menu:before, .tours_page header .toggle_menu:after {
+        background-color: #172a3f;
+    }
+
+    .tours_page header .toggle_menu:before {
+        border-top: 3px solid #172a3f;
+        background-color: transparent;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1255px) {
+    .main_page .wrapper {
+        width: 100%;
+        padding: 50px 0 40px;
+    }
+
+    .main_page h2 {
+        font-size: 36px;
+        margin-bottom: 8px;
+        margin-left: 30px;
+    }
+
+    .main_page .wave_line {
+        margin-left: 30px;
+    }
+
+    .main_page #about_company {
+        background-position-y: -160px;
+        background-size: auto;
+    }
+
+    .main_page h1 {
+        margin-top: 35px;
+        font-size: 60px;
+        line-height: 1.2em;
+    }
+
+    .main_page .left p {
+        width: 405px;
+    }
+
+    .main_page .right .social {
+        top: 565px;
+    }
+
+    .main_page #fleet {
+        margin: 0;
+        background: none #fff;
+        height: auto;
+        position: relative;
+    }
+
+    .main_page #fleet:before {
+        content: '';
+        position: absolute;
+        top: -122px;
+        left: 50%;
+        display: block;
+        width: 120%;
+        height: 120px;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        box-shadow: 0 50px 0 20px #fff;
+        z-index: 4;
+        pointer-events: none;
+    }
+
+    .main_page #fleet .table_row {
+        position: relative;
+        padding: 0;
+        background-color: #fff;
+        z-index: 5;
+    }
+
+    .main_page #fleet>div>div {
+        padding-bottom: 27px;
+        position: relative;
+    }
+
+    .main_page #fleet>div>div hr, #fleet>div>div p {
+        display: none;
+    }
+
+    .main_page #fleet>div>div div {
+        position: static;
+        transform: none;
+        width: 134px;
+        height: 72px;
+    }
+
+    .main_page #fleet>div>div:nth-child(1)>div {
+        background-size: 103px;
+    }
+
+    .main_page #fleet>div>div:nth-child(2)>div {
+        background-size: 79px;
+    }
+
+    .main_page #fleet>div>div:nth-child(3)>div {
+        background-size: 135px;
+    }
+
+    .main_page #fleet>div>div:nth-child(4)>div {
+        background-size: 110px;
+    }
+
+    .main_page #fleet>div>div h3 {
+        position: static;
+        transform: none;
+        font-family: "PTSansNarrow", sans-serif;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .main_page #fleet>div>div a {
+        top: 0;
+        left: 0;
+        transform: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        padding: 0;
+    }
+
+    .main_page #fleet>div>div:hover {
+        background-color: #fff;
+    }
+
+    .main_page #fleet>div>div:hover div {
+        height: 72px;
+    }
+
+    .main_page #fleet>div>div:hover h3 {
+        color: #4ca3b6;
+    }
+
+    .main_page #fleet>div>div a:hover {
+        display: block;
+    }
+
+    .main_page .choice {
+        display: inline-block;
+    }
+
+    .main_page #tours {
+        background: #0c1826;
+        position: relative;
+    }
+
+    .main_page #tours .wrapper {
+        padding: 42px 0 40px;
+    }
+
+    .main_page #tours .wave_line {
+        width: 66px;
+    }
+
+    .main_page #tours .choice_wrapper {
+        position: absolute;
+        top: 48px;
+        right: 24px;
+        width: 100%;
+        text-align: right;
+        z-index: 3;
+    }
+
+    .main_page .tours_menu {
+        display: none;
+        position: absolute;
+        top: 29px;
+        right: 0;
+        width: auto;
+        padding: 0;
+        border-right: 1px solid #4ca3b6;
+        background-color: rgba(12, 24, 38, 0.7);
+    }
+
+    .main_page .tours_menu li {
+        display: block;
+        margin: 0;
+        border: none;
+    }
+
+    .main_page .tours_menu li.current {
+        border: none;
+        font-family: "Geometria", sans-serif;
+        color: #b8bec4;
+    }
+
+    .main_page .tours_menu li:hover {
+        border: none;
+        color: #4ca3b6;
+    }
+
+    .main_page .tours_slider_wrapper {
+        margin: 30px auto 0;
+        width: 841px;
+    }
+
+    .main_page .tours_slider .slider_nav {
+        left: 10px;
+        z-index: 1;
+    }
+
+    .main_page .tours_slider .viewport_wrapper {
+        left: 0;
+    }
+
+    .main_page .tours_slider .description {
+        left: 500px;
+        width: 340px;
+    }
+
+    .main_page .tours_slider .description .top {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .main_page .tours_slider .description .down {
+        padding-left: 30px;
+    }
+
+    .main_page .tours_slider .arrows {
+        left: 407px;
+    }
+
+    .main_page .tours_slider .arrows a {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .main_page .tours_slider .arrows a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .main_page #tours .wrapper>.button {
+        margin-top: 35px;
+    }
+
+    .main_page .tours_rm_wrapper {
+        width: 100%;
+        height: auto;
+        transform: translateX(-50%);
+        margin: 0;
+    }
+
+    .main_page .tours_rm_slider {
+        margin: 0;
+    }
+
+    .main_page .tours_rm_slider .viewport_wrapper {
+        display: none;
+    }
+
+    .main_page .tours_rm_slider .arrows {
+        display: none;
+    }
+
+    .main_page .tours_rm_slider .close_button {
+        top: 0;
+        right: 0;
+        left: auto;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(12, 26, 42, 0.95);
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .main_page .tours_rm_slider .description {
+        width: 100%;
+        margin: 0;
+    }
+
+    .main_page .tours_rm_slider .top {
+        padding-right: 40px;
+    }
+
+    .main_page .tours_rm_slider .text_wrapper {
+        padding-left: 40px;
+    }
+
+    .main_page #certificate .wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .main_page .certificate_wrapper {
+        margin: 0 auto;
+        width: 840px;
+    }
+
+    .main_page .certificate_wrapper .yacht, .certificate_wrapper .boat {
+        width: 140px;
+    }
+
+    .main_page .banner {
+        left: 140px;
+        padding-left: 30px;
+    }
+
+    .main_page .banner .wave_line {
+        margin-left: 0;
+    }
+
+    .main_page .banner h2 {
+        margin-left: 0;
+    }
+
+    .main_page #certificate form {
+        width: 356px;
+        left: 484px;
+    }
+
+    .main_page #certificate form .top, #certificate form .down {
+        padding-right: 5px;
+        padding-left: 30px;
+        background-position-x: right;
+    }
+
+    .main_page #instagram .wrapper {
+        padding: 40px 0 65px 30px;
+        text-align: right;
+    }
+
+    .main_page #instagram h2 {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .main_page  #instagram .wave_line {
+        margin-left: 0;
+        width: 137px;
+    }
+
+    .main_page #instagram .social_icons {
+        margin-right: 30px;
+    }
+
+    .main_page .photo_wrapper .first {
+        display: none;
+    }
+
+    .main_page .photo_wrapper {
+        text-align: center;
+    }
+
+    .main_page .photo_wrapper>div {
+        float: none;
+    }
+
+    .main_page #events {
+        position: relative;
+    }
+
+    .main_page #events .wrapper {
+        padding: 42px 0 40px;
+    }
+
+    .main_page #events .wave_line {
+        width: 180px;
+    }
+
+    .main_page #events .choice_wrapper {
+        position: absolute;
+        top: 48px;
+        right: 24px;
+        width: 100%;
+        text-align: right;
+        z-index: 3;
+        color: #102235;
+    }
+
+    .main_page #events .choice {
+        padding-right: 21px;
+    }
+
+    .main_page #events .choice:after {
+        display: none;
+    }
+
+    .main_page .events_menu {
+        display: none;
+        position: absolute;
+        top: 29px;
+        right: 0;
+        width: auto;
+        padding: 0;
+        border-right: 1px solid #4ca3b6;
+        background-color: rgba(255, 255, 255, 0.7);
+        color: #102235;
+    }
+
+    .main_page .events_menu li {
+        display: block;
+        margin: 0;
+        border: none;
+    }
+
+    .main_page .events_menu li.current {
+        border: none;
+        font-family: "Geometria", sans-serif;
+        color: #102235;
+    }
+
+    .main_page .events_menu li:hover {
+        border: none;
+        color: #4ca3b6;
+    }
+
+    .main_page .events_slider_wrapper {
+        width: 841px;
+        overflow: hidden;
+        margin: 30px auto 0;
+    }
+
+    .main_page .events_slider .viewport_wrapper {
+        left: -115px;
+    }
+
+    .main_page .events_slider .slider_nav {
+        width: 501px;
+    }
+
+    .main_page .events_slider .description {
+        width: 340px;
+        padding-left: 30px;
+        padding-right: 30px;
+        left: 501px;
+    }
+
+    .main_page .events_slider .event_img {
+        left: 468px;
+    }
+
+    .main_page .events_slider>li:nth-child(even) .event_img {
+        left: 5px;
+    }
+
+    .main_page .events_slider>li:nth-child(even) .viewport_wrapper {
+        left: 225px;
+    }
+
+    .main_page .events_slider>li:nth-child(even) .slider_nav {
+        left: 340px;
+    }
+
+    .main_page #routes {
+        display: none;
+    }
+
+    .main_page #captains {
+        display: none;
+    }
+
+    footer #piers {
+        background-size: auto 123%;
+        background-position: left -397px top;
+    }
+
+    footer #piers h2 {
+        font-size: 45px;
+        margin-left: 0;
+    }
+
+    footer #piers .wave_line {
+        width: 152px;
+        margin-left: 0;
+    }
+
+    footer .wrapper {
+        width: 100%;
+    }
+
+    footer #contacts h2 {
+        font-size: 45px;
+        margin-left: 0;
+    }
+
+    footer #contacts .wave_line {
+        margin-left: 0;
+    }
+
+    footer #contacts .caption,  footer #contacts .contact_info, footer #contacts .location {
+        width: 33%;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 840px) {
+    .main_page #about_company {
+        background-position: top -139px right -754px;
+        background-size: auto 260%;
+    }
+
+    .main_page header {
+        padding-left: 30px;
+    }
+
+    .main_page .logo {
+        width: 66px;
+        height: 29px;
+        margin: 0;
+    }
+
+    .main_page nav {
+        width: 100%;
+    }
+
+    .main_page .toggle_menu {
+        margin-right: 30px;
+        margin-left: auto;
+        margin-top: 29px;
+    }
+
+    .main_page h1 {
+        font-size: 36px;
+        margin-top: 18px;
+        margin-bottom: 0;
+        line-height: normal;
+    }
+
+    .main_page .left {
+        padding-bottom: 75px;
+    }
+
+    .main_page .left p {
+        font-size: 14px;
+        line-height: normal;
+        width: 210px;
+        height: 39px;
+        overflow: hidden;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .main_page .book {
+        padding: 19px 14px;
+        margin-top: 13px;
+    }
+
+    .main_page .right .social {
+        top: 325px;
+    }
+
+    .main_page #fleet {
+        display: block;
+    }
+
+    .main_page #fleet .table_row {
+        display: block;
+    }
+
+    .main_page #fleet>div>div {
+        display: inline-block;
+        width: 50%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .main_page #fleet>div>div:nth-child(1), #fleet>div>div:nth-child(2) {
+        margin-top: 95px;
+    }
+
+    .main_page #fleet>div>div:nth-child(3) {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .main_page #fleet>div>div:nth-child(4) {
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
+
+    .main_page #fleet>div>div:nth-child(1) {
+        text-align: right;
+    }
+
+    .main_page #fleet>div>div:nth-child(2) {
+        text-align: left;
+    }
+
+    .main_page #fleet>div>div:nth-child(3) {
+        text-align: right;
+    }
+
+    .main_page #fleet>div>div:nth-child(4) {
+        text-align: left;
+    }
+
+    .main_page #fleet>div>div h3 {
+        width: 134px;
+        text-align: center;
+    }
+
+    .main_page #fleet>div>div:nth-child(1) h3, #fleet>div>div:nth-child(3) h3 {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .main_page .tours_slider {
+        padding: 0;
+    }
+
+    .main_page .tours_slider li > div {
+        padding: 0;
+    }
+
+    .main_page .tours_slider_wrapper {
+        width: 100%;
+    }
+
+    .main_page .tours_slider .viewport_wrapper {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        position: static;
+    }
+
+    .main_page .tours_slider .viewport {
+        width: 100%;
+    }
+
+    .main_page .tours_slider .arrows {
+        top: 0;
+        right: 0;
+        left: auto;
+        width: 61px;
+    }
+
+    .main_page .tours_slider .description {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .main_page .tours_slider .description .top {
+        padding-top: 23px;
+        padding-right: 67px;
+        position: relative;
+    }
+
+    .main_page .tours_slider .description h4 {
+        display: inline-block;
+        float: left;
+        margin: 0;
+    }
+
+    .main_page .tours_slider .description .tour {
+        margin: 5px 0 5px 14px;
+        display: inline-block;
+    }
+
+    .main_page .tours_slider .description .time {
+        position: absolute;
+        top: 28px;
+        right: 30px;
+    }
+
+    .main_page .tours_slider .description hr {
+        margin-top: 20px;
+        margin-bottom: 13px;
+    }
+
+    .main_page .tours_slider .read_more {
+        text-align: left;
+    }
+
+    .main_page #tours .read_more a {
+        float: left;
+        margin: 2px 14px 0 0;
+    }
+
+    .main_page #tours .read_more hr {
+        margin: 0;
+    }
+
+    .main_page .tours_slider .description .down {
+        padding: 21px 30px 30px;
+        text-align: right;
+    }
+
+    .main_page .tours_slider .description .price {
+        float: left;
+    }
+
+    .main_page #tours .wrapper>.button {
+        margin-top: 45px;
+    }
+
+    .main_page #certificate .wrapper {
+        padding: 0;
+    }
+
+    .main_page .certificate_wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .main_page .certificate_wrapper .yacht, .main_page .certificate_wrapper .boat {
+        display: none;
+    }
+
+    .main_page .banner {
+        position: static;
+        width: 100%;
+        padding: 57px 30px 23px;
+        background-size: 100% auto;
+        background-position: center left;
+    }
+
+    .main_page .banner h2 {
+        width: 70%;
+    }
+
+    .main_page .banner hr {
+        margin-top: 66px;
+    }
+
+    .main_page #certificate form {
+        position: static;
+        width: 100%;
+    }
+
+    .main_page #certificate form .top {
+        position: static;
+        background: #fff;
+        padding: 52px 30px 40px;
+        height: auto;
+    }
+
+    .main_page #certificate form .down {
+        position: static;
+        background: #e7eaec;
+        padding: 29px 60px 27px 38px;
+        height: auto;
+    }
+
+    .main_page #certificate form .down .button {
+        float: right;
+    }
+
+    .main_page #instagram {
+        background-size: auto 100%;
+        background-position-y: bottom;
+    }
+
+    .main_page #instagram .wrapper {
+        padding-bottom: 115px;
+    }
+
+    .main_page #instagram .social_icons {
+        width: 100px;
+    }
+
+    .main_page #instagram .social_icons a {
+        margin-left: 19px;
+    }
+
+    .main_page #instagram .social_icons .fb, .main_page #instagram .social_icons .vk {
+        width: 25px;
+    }
+
+    .main_page #instagram .social_icons a span {
+        display: none;
+    }
+
+    .main_page .photo_wrapper>div {
+        width: 100%;
+        position: relative;
+        padding-bottom: 294px;
+    }
+
+    .main_page .photo_wrapper .third {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .main_page .photo_wrapper .second {
+        position: absolute;
+        width: 50%;
+        height: 294px;
+        bottom: 0;
+        left: 0;
+    }
+
+    .main_page .photo_wrapper .fourth {
+        position: absolute;
+        width: 50%;
+        height: 294px;
+        bottom: 0;
+        left: 50%;
+    }
+
+    .main_page .photo_wrapper .instagram_block {
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+
+    .main_page #events .wave_line {
+        display: none;
+    }
+
+    .main_page #events .wrapper {
+        padding-top: 7px;
+        padding-bottom: 0;
+    }
+
+    .main_page #events .choice_wrapper {
+        top: 13px;
+    }
+
+    .main_page .events_slider_wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .main_page .events_slider>li {
+        margin: 0;
+        height: auto;
+    }
+
+    .main_page .events_slider .viewport_wrapper {
+        display: none;
+    }
+
+    .main_page .events_slider .slider_nav {
+        display: none;
+    }
+
+    .main_page .events_slider .description {
+        position: static;
+        width: 100%;
+        background-size: 100% auto;
+        background-position-y: bottom;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .main_page .events_slider .event_img {
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 346px;
+        height: 239px;
+    }
+
+    .main_page .events_slider > li:nth-child(even) .event_img {
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .main_page .events_slider>li:nth-child(odd) .description {
+        background-image: url("../img/event_bg_light.jpg");
+        background-color: #fff;
+        color: #102235;
+    }
+
+    .main_page .events_slider h4 {
+        margin-bottom: 8px;
+    }
+
+    .main_page #events .events_slider .description a {
+        margin-top: 37px;
+    }
+
+    .main_page #events .events_slider>li:nth-child(odd) .description a {
+        color: #102235;
+    }
+
+    .main_page .events_slider .price {
+        left: auto;
+        top: auto;
+        right: 30px;
+        bottom: 39px;
+        font-size: 31px;
+    }
+
+    .main_page .events_slider>li:nth-child(odd) .price {
+        color: #102235;
+    }
+
+    .main_page .events_slider > li:nth-child(even) .price {
+        left: auto;
+        top: auto;
+        right: 30px;
+        bottom: 43px;
+    }
+
+    .main_page #events .button {
+        display: none;
+    }
+
+    footer #piers {
+        height: 558px;
+    }
+
+    footer #contacts {
+        background-size: auto 100%;
+        background-position: left -364px top;
+    }
+
+    footer #contacts .wrapper {
+        padding: 77px 30px 52px;
+    }
+
+    footer #contacts .wave_line {
+        margin-bottom: 39px;
+    }
+
+    footer #contacts .table_cell {
+        display: block;
+    }
+
+    footer #contacts .caption,  footer #contacts .contact_info, footer #contacts .location {
+        width: auto;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .main_page #about_company {
+        background-position: top -62px right -567px;
+        background-size: auto 170%;
+    }
+
+    .main_page #fleet>div>div {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .main_page .banner h2 {
+        width: 88%;
+    }
+
+    .main_page #certificate form .category {
+        float: right;
+    }
+
+    .main_page .photo_wrapper>div {
+        padding-bottom: 205px;
+    }
+
+    .main_page .photo_wrapper .second {
+        height: 205px;
+    }
+
+    .main_page .photo_wrapper .fourth {
+        height: 205px;
+    }
+
+    .main_page .events_slider .description {
+        background-size: 100% 100%;
+    }
+
+    .main_page .events_slider .event_img {
+        left: 0;
+        transform: translateX(0%);
+    }
+
+    .main_page .events_slider > li:nth-child(even) .event_img {
+        left: 0;
+        transform: translateX(0%);
+    }
+
+    .main_page .tours_rm_slider .slider_nav {
+        display: block;
+        border-bottom: 1px solid #4ca3b6;
+        padding-bottom: 30px;
+    }
+
+    .main_page .tours_rm_slider .slider_nav:after {
+        display: none;
+    }
+
+    .main_page .tours_rm_slider .text_wrapper {
+        display: block;
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    .main_page .tours_rm_slider .top {
+        padding-left: 40px;
+        padding-top: 30px;
+    }
+
+}
